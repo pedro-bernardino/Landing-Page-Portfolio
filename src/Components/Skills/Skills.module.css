@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+          /* margin-top: 100px; */
+          margin-bottom: 75px;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    img {
+        width: 20px;
+    }
+    
+  }
+
+  .skillCard {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    max-width: 26ch;
+  }
+
+  hr {
+    width: 100px;
+    height: 1px;
+    border: none;
+    background-color: var(--text-color);
+    margin: 30px auto;
+  }
+
+  @media (width >= 800px) {
+    .skillCard {
+      max-width: fit-content;
+      gap: 30px;
+  
+      p {
+        font-size: 15px;
+      }
+    }
+  
+    hr {
+      width: 300px;
+    }
+  }

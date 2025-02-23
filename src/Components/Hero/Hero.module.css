@@ -1,17 +1,15 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: Center;
     gap: 0px;
     text-align: center;
     height: 100dvh;
     min-height: 500px;
-    margin-top: 0;
 
-}
-
-.logo {
-  height: 400px;
+    .hero {
+      max-width: 200px;
+    }
 }
 
 .description {
@@ -24,8 +22,29 @@
   justify-content: center;
   
   img {
-      height: 50px;
+      height: 40px;
   }
 }
 
 
+  @media (width >= 800px) {
+    .container {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-evenly;
+  
+      .hero {
+        max-width: 300px; 
+        width: 300px;
+      }
+    }
+  }
+  
+  @media (width >= 1400px) {
+    .container {
+      .hero {
+        max-width: 400px;
+        width: 500px;
+      }
+    }
+  }
