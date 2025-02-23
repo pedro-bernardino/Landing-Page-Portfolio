@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    gap: 0px;
+    text-align: center;
+    height: 100dvh;
+    min-height: 500px;
+    margin-top: 0;
+
+}
+
+.logo {
+  height: 400px;
+}
+
+.description {
+  text-align: center;
+}
+
+.socialLogosSpan {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  
+  img {
+      height: 50px;
+  }
+}
+
+
