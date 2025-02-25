@@ -1,0 +1,42 @@
+.tooltipContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: Center;
+    position: relative;
+    gap: 20px; 
+}
+.tooltip {
+    display: flex;
+    width: 100px;
+    height: 30px; 
+    background-color: #222;
+    text-align: center;
+    justify-content: Center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 15px;
+    border: solid 1px white;
+    position: absolute;
+    transition: all 0.3s ease;
+    top: -35px;
+    opacity: 0;
+}
+.tooltipArrow {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid white;
+    position: absolute;
+    bottom: -12px;
+    left: calc(50% - 12px);
+}
+.tooltipLogo{
+    height: 30px;
+    cursor: pointer;
+}
+.tooltip.open {
+    transform: translateY(-10px);
+    opacity: 1;
+}

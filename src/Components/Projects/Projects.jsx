@@ -1,6 +1,9 @@
 import styles from './Projects.module.css'
+/* import './Projects.module.css' */
 
+//components
 import ProjectCard from '../Projects/ProjectCard'
+import LogoTolltipGroup from './LogoTooltipGroup'
 
 //projects images
 import PortfolioLogo from '../../assets/portfolio.png'
@@ -11,12 +14,16 @@ import techReact from '../../assets/react.svg'
 import techVite from '../../assets/vite.svg'
 import techTailwind from '../../assets/tailwind.svg'
 import techTypeScript from '../../assets/typescript.svg'
+import techHeadlessui from '../../assets/headlessui.svg'
+
 
 function Projects() {
+
 const reactTech = {logo: techReact, name: 'React'}
 const viteTech = {logo: techVite, name: 'Vite'}
 const tailwindTech = {logo: techTailwind, name: 'Tailwind'}
 const typescriptTech = {logo: techTypeScript, name: 'TypeScript'}
+const headlessuiTech = {logo: techHeadlessui, name: 'Headless ui'}
 
   return (
     <section id='projects' className={styles.container}>
@@ -27,7 +34,7 @@ const typescriptTech = {logo: techTypeScript, name: 'TypeScript'}
               src={PortfolioLogo}
               h3Type='Landing Page'
               h3Name='Portfolio'
-              tech={
+              logos={
                 [reactTech, viteTech]
               }
           />
@@ -36,8 +43,8 @@ const typescriptTech = {logo: techTypeScript, name: 'TypeScript'}
               src={Kobodrop}
               h3Type='Landing Page'
               h3Name='Finantial App'
-              tech={
-                [reactTech, viteTech, tailwindTech, typescriptTech]
+              logos={
+                [reactTech, viteTech, tailwindTech, typescriptTech, headlessuiTech]
               }
           />
         </div>

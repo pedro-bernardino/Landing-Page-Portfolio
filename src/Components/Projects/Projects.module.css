@@ -3,6 +3,8 @@
         /*margin-top: 100px;*/
         margin-bottom: 75px;
     }
+
+
 }
 
 .projectsContainer {
@@ -48,8 +50,16 @@
             }
         }
     }
+    
+    
 }
 
+.tooltipGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: Center;
+    gap: 15px;
+}
 
 @media (width >= 800px) {
     .projectsContainer {
