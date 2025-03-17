@@ -1,0 +1,6 @@
+.tooltipGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: Center;
+    gap: 15px;
+}

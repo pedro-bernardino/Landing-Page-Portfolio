@@ -1,7 +1,7 @@
 .container {
     h1 {
-        /*margin-top: 100px;*/
-        margin-bottom: 75px;
+        margin-top: 100px;
+        margin-bottom: 30px;
     }
 
 
@@ -11,55 +11,13 @@
     display: flex;
     flex-direction: column;
     justify-content: Center;
-    gap: 10px;
+    gap: 30px;
     margin-top: 10px;
     text-align: center;
-    min-height: 500px;
-
-    img {
-        height: 30px;
-    }
-
-    h1 {
-        gap: 100px;
-    }
-
-    a {
-        img {
-            border: solid 1px white;
-            border-radius: 20px;
-            height: 200px
-        }
-    }
-
-    span {
-        display: flex;
-        flex-direction: row;
-        justify-content: Center;
-        margin-top: 0px;
-
-        span {
-            display: flex;
-            flex-direction: column;
-            justify-content: Center;
-            padding: 0px;
-            width: 60px;
-            h5{
-                font-size: 10px;
-                margin-top: 0px;
-            }
-        }
-    }
-    
-    
+    /* min-height: 500px; */
 }
 
-.tooltipGroup {
-    display: flex;
-    flex-direction: row;
-    justify-content: Center;
-    gap: 15px;
-}
+
 
 @media (width >= 800px) {
     .projectsContainer {

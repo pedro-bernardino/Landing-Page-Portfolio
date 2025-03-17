@@ -3,7 +3,6 @@ import styles from './Projects.module.css'
 
 //components
 import ProjectCard from '../Projects/ProjectCard'
-import LogoTolltipGroup from './LogoTooltipGroup'
 
 //projects images
 import PortfolioLogo from '../../assets/portfolio.png'
@@ -31,6 +30,7 @@ const headlessuiTech = {logo: techHeadlessui, name: 'Headless ui'}
         <div className={styles.projectsContainer}>
           <ProjectCard 
               href=''
+              demoRef=''
               src={PortfolioLogo}
               h3Type='Landing Page'
               h3Name='Portfolio'
@@ -40,6 +40,7 @@ const headlessuiTech = {logo: techHeadlessui, name: 'Headless ui'}
           />
           <ProjectCard 
               href=''
+              demoRef=''
               src={Kobodrop}
               h3Type='Landing Page'
               h3Name='Finantial App'

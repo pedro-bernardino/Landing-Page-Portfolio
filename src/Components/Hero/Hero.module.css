@@ -7,8 +7,8 @@
     height: 100dvh;
     min-height: 500px;
 
-    .hero {
-      max-width: 200px;
+    .heroLogo {
+      max-width: 300px;
     }
 }
 
@@ -33,7 +33,7 @@
       align-items: center;
       justify-content: space-evenly;
   
-      .hero {
+      .heroLogo {
         max-width: 300px; 
         width: 300px;
       }
@@ -42,7 +42,7 @@
   
   @media (width >= 1400px) {
     .container {
-      .hero {
+      .heroLogo {
         max-width: 400px;
         width: 500px;
       }

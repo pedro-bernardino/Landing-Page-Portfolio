@@ -1,7 +1,7 @@
 
 
 import LogoTooltip from "./LogoTooltip";
-import styles from '../Projects/Projects.module.css'
+import styles from './LogoTooltip.module.css'
 
 function LogoTooltipGroup({logosBlock}) {
     return (
