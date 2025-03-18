@@ -3,10 +3,12 @@ import styles from './Projects.module.css'
 
 //components
 import ProjectCard from '../Projects/ProjectCard'
+import MoreToComeCard from './MoreToComeCard/MoreToComeCard'
 
 //projects images
 import PortfolioLogo from '../../assets/portfolio.png'
 import Kobodrop from '../../assets/kobodrop.png'
+import MoreToCome from '../../assets/coming-soon.jpg'
 
 //icons
 import techReact from '../../assets/react.svg'
@@ -14,6 +16,7 @@ import techVite from '../../assets/vite.svg'
 import techTailwind from '../../assets/tailwind.svg'
 import techTypeScript from '../../assets/typescript.svg'
 import techHeadlessui from '../../assets/headlessui.svg'
+
 
 
 function Projects() {
@@ -38,7 +41,7 @@ const headlessuiTech = {logo: techHeadlessui, name: 'Headless ui'}
                 [reactTech, viteTech]
               }
           />
-          <ProjectCard 
+{/*           <ProjectCard 
               href=''
               demoRef=''
               src={Kobodrop}
@@ -47,6 +50,14 @@ const headlessuiTech = {logo: techHeadlessui, name: 'Headless ui'}
               logos={
                 [reactTech, viteTech, tailwindTech, typescriptTech, headlessuiTech]
               }
+          /> */}
+          <MoreToComeCard 
+            src={MoreToCome}
+            h3Type='Landing Page'
+            h3Name='Finantial App'
+            logos={
+              [reactTech, viteTech, tailwindTech, typescriptTech, headlessuiTech]
+            }
           />
         </div>
     </section>

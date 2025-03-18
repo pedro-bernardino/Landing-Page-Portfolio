@@ -17,16 +17,7 @@ function Skills() {
     <div className={styles.skillCard}>
       <SkillCard src={checkMarkIcon} skill="React" />
       <SkillCard src={checkMarkIcon} skill="Angular" />
-      <SkillCard src={checkMarkIcon} skill="Vue" />
       <SkillCard src={checkMarkIcon} skill="Tailwind CSS" />
-    </div>
-    <hr />
-    <div className={styles.skillCard}>
-      <SkillCard src={checkMarkIcon} skill="Redux" />
-      <SkillCard src={checkMarkIcon} skill="Webpack" />
-      <SkillCard src={checkMarkIcon} skill="Git" />
-      <SkillCard src={checkMarkIcon} skill="Jest" />
-      <SkillCard src={checkMarkIcon} skill="Bootstrap" />
     </div>
   </section>
   )
