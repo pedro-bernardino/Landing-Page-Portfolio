@@ -1,0 +1,11 @@
+
+
+.socialLogo {
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.socialLogo:hover {
+    border-color: #ffffff;
+  }

@@ -26,6 +26,9 @@
   }
 }
 
+.resumeButton {
+  margin-top: 10px;
+}
 
   @media (width >= 800px) {
     .container {

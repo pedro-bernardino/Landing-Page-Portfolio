@@ -27,12 +27,13 @@
 }
 
 .image_overlay_Container {
+    display: inline-block;
     position: relative;
 }
 
 .image {
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
     border: solid 1px rgb(255, 255, 255);
     border-radius: 20px;
     max-width: 350px;
@@ -45,12 +46,12 @@
     background-color: rgb(0, 0, 0);
     opacity: 0;
     border-radius: 20px;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
+    height: calc(100% - 3px);
+    width: calc(100% - 3px);
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    right: 1px;
 }
 
 .overlayContents {

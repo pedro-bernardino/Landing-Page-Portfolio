@@ -1,6 +1,6 @@
 import styles from './ProjectCard.module.css'
 
-import LogoTooltipGroup from './LogoTooltip/LogoTooltipGroup'
+import LogoTooltipGroup from '../LogoTooltip/LogoTooltipGroup'
 
 function ProjectCard({href, demoRef, src, h3Type, h3Name, logos}) {
   return (
@@ -16,15 +16,21 @@ function ProjectCard({href, demoRef, src, h3Type, h3Name, logos}) {
               src={src} 
               alt={`${h3Name} logo`} />
           </div>
+          {href && <>
           <div className={styles.overlay}></div>
           <div className={styles.overlayContents}>
-              <a href={demoRef} target="_blank">
-                <button className={styles.overlayButtons}>Demo</button>
-              </a>
+          {demoRef.lenght}
+              { demoRef &&
+                <a href={demoRef} target="_blank">
+                  <button className={styles.overlayButtons}>Demo</button>
+                </a>
+              }
               <a href={href} target="_blank">
                 <button className={styles.overlayButtons}>Code</button>
               </a>
           </div>
+          </>
+          }
         </div>
         <h3 >{h3Type} {/* <br /> */} {h3Name}</h3>
         <LogoTooltipGroup logosBlock={logos}/>

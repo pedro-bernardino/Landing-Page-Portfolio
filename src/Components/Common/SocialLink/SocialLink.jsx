@@ -1,12 +1,12 @@
-
+import style from './SocialLink.module.css'
 
 function SocialLink({href, src}) {
   return (
-      <a
+      <a 
         href={href}
         target="_blank"
       >
-        <img src={src} alt="logo" />
+        <img className={style.socialLogo} src={src} alt="logo" />
       </a>
   )
 }

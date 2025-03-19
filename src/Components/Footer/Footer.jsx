@@ -1,7 +1,7 @@
 import styles from './Footer.module.css'
 import Linkedin from '../../assets/linkedin-dark.svg'
 import Github from '../../assets/github-dark.svg'
-import SocialLink from '../Hero/SocialLink'
+import SocialLink from '../Common/SocialLink/SocialLink'
 
 function Footer() {
   return (

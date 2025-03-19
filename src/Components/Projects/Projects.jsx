@@ -1,9 +1,7 @@
 import styles from './Projects.module.css'
-/* import './Projects.module.css' */
 
 //components
-import ProjectCard from '../Projects/ProjectCard'
-import MoreToComeCard from './MoreToComeCard/MoreToComeCard'
+import ProjectCard from './ProjectCard/ProjectCard'
 
 //projects images
 import PortfolioLogo from '../../assets/portfolio.png'
@@ -16,8 +14,6 @@ import techVite from '../../assets/vite.svg'
 import techTailwind from '../../assets/tailwind.svg'
 import techTypeScript from '../../assets/typescript.svg'
 import techHeadlessui from '../../assets/headlessui.svg'
-
-
 
 function Projects() {
 
@@ -32,7 +28,7 @@ const headlessuiTech = {logo: techHeadlessui, name: 'Headless ui'}
         <h1>Projects</h1>
         <div className={styles.projectsContainer}>
           <ProjectCard 
-              href=''
+              href='https://github.com/pedro-bernardino/landingPagePortfolio'
               demoRef=''
               src={PortfolioLogo}
               h3Type='Landing Page'
@@ -41,7 +37,7 @@ const headlessuiTech = {logo: techHeadlessui, name: 'Headless ui'}
                 [reactTech, viteTech]
               }
           />
-{/*           <ProjectCard 
+{/*           <ProjectCard
               href=''
               demoRef=''
               src={Kobodrop}
@@ -51,7 +47,9 @@ const headlessuiTech = {logo: techHeadlessui, name: 'Headless ui'}
                 [reactTech, viteTech, tailwindTech, typescriptTech, headlessuiTech]
               }
           /> */}
-          <MoreToComeCard 
+          <ProjectCard 
+            href=''
+            demoRef=''
             src={MoreToCome}
             h3Type='Landing Page'
             h3Name='Finantial App'
