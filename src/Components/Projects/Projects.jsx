@@ -28,7 +28,7 @@ const headlessuiTech = {logo: techHeadlessui, name: 'Headless ui'}
         <h1>Projects</h1>
         <div className={styles.projectsContainer}>
           <ProjectCard 
-              href='https://github.com/pedro-bernardino/landingPagePortfolio'
+              href='https://github.com/pedro-bernardino/Landing-Page-Portfolio'
               demoRef=''
               src={PortfolioLogo}
               h3Type='Landing Page'
